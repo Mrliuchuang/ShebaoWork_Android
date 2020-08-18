@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.liuchuang.shebao">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".utius.shebaoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/worker"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/worker"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".work.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VideoChatViewActivity" />
+        <activity android:name=".shouye" />
+        <activity android:name=".Jiatingchengyuan" />
+        <activity android:name=".Chengyuanxinxi" />
+        <activity android:name=".Chengyuanxiangqing" />
+        <activity android:name=".Chengyuanxinxi_xiugai" />
+        <!-- <activity android:name=".MainActivity" /> -->
+        <activity android:name=".Renzhengxinxitijiao" />
+        <activity android:name=".Renzhengrizhijilu" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".work.Dengdaishenhe_work" />
+        <activity android:name=".work.Shenhetongguo_work" />
+        <activity android:name=".work.Worker" />
+        <activity android:name=".work.Zhuce" />
+        <activity android:name=".work.One_Shenhe" />
+        <activity android:name=".dengdaishenhe.Renzhengrizhijilu" />
+        <activity android:name=".dengdaishenhe.Shenhetongguo_tupian"></activity>
+    </application>
+
+</manifest>
